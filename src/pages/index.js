@@ -1,6 +1,7 @@
 import Head from "next/head";
 import SignZRX from "@/components/SignZRX";
 import GetZRX from "@/components/GetZRX";
+import RebaseTokens from "@/components/RebaseTokens";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <SignZRX />
         <hr />
         <GetZRX />
+        <hr />
+        <RebaseTokens />
       </main>
     </>
   );
