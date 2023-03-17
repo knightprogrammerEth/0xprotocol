@@ -24,9 +24,9 @@ function RebaseTokens() {
 
       const balance = await buttonTokenContract.totalSupply();
       const valueToset = ethers.BigNumber.from(balance).toString();
-      // const valueInEther = balance.div(BigNumber.from(10).pow(18));
-      // const valueToset = valueInEther.toNumber();
-      // setTotalSupply(valueToset);
+
+      // const valueToset =
+      // parseFloat(ethers.BigNumber.from(balance).toString()) / 10 ** 18;
 
       setTotalSupply(valueToset);
     } else {
@@ -42,11 +42,10 @@ function RebaseTokens() {
         provider
       );
       const balance = await buttonTokenContract.totalSupply();
-      const valueToset = ethers.BigNumber.from(balance).toString();
 
-      // const valueInEther = balance.div(BigNumber.from(10).pow(18));
-      // const valueToset = valueInEther.toNumber();
-      // setTotalSupply(valueToset);
+      const valueToset = ethers.BigNumber.from(balance).toString();
+      // const valueToset =
+      //   parseFloat(ethers.BigNumber.from(balance).toString()) / 10 ** 18;
 
       setTotalSupply(valueToset);
     }
